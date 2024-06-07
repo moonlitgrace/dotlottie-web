@@ -41,7 +41,7 @@ export const DotLottieSolid = (props: DotLottieSolidProps): JSX.Element => {
 
   createEffect(() => {
     if (typeof stableDotLottieRefCallback === 'function' && dotLottie()) {
-      stableDotLottieRefCallback(dotLottie());
+      stableDotLottieRefCallback(dotLottie() as DotLottie);
     }
   });
 
